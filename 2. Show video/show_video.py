@@ -18,9 +18,13 @@ while True:
     # If video ended/failed then finishes the loop
     if not grabbed:
         break
+        
+    # Calculate the monochrome version of the image frame
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
    
-    # Show the curren image frame 
+    # Show the curren image frame and the monochrome version
     cv2.imshow("Video", frame)
+    cv2.imshow("Mono", gray)
 
     # Read a key from user
     key = cv2.waitKey(25)
