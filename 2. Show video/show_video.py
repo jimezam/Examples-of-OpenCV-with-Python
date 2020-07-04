@@ -5,7 +5,12 @@ import cv2
 #   integer  - read video stream from webcam
 
 # capture = cv2.VideoCapture("/my/file/video.mp4")
-capture = cv2.VideoCapture(0)
+capture = cv2.VideoCapture(1)
+
+# Check if capture was successfuly established
+if not capture.isOpened():
+    print("ERROR, I could not establish video capture")
+    exit()
 
 index = 0
 
