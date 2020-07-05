@@ -1,2 +1,2 @@
-# Examples-of-OpenCV-with-Python
-Experiments made with OpenCV using Python
+# Examples-of-Python
+Experiments made with Python 3.
